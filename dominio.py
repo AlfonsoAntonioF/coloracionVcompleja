@@ -168,7 +168,7 @@ def coloreado_de_dominio(T, dom=(-5, 5), N=72, modulo='lineal', ax=None):
                    alpha=0.45, linewidths=1.)
         plt.colorbar(mod, ax=ax, orientation='horizontal',
                      label='$|T(z)|$')
-        plt.savefig("Correlaciones Pearson.jpg")
+        #plt.savefig("Correlaciones Pearson.jpg")
     elif modulo == 'lineal':
         # Si se especificó "lineal" uso escala lineal.
         mod = ax.contourf(Z.real, Z.imag, R, cmap='Greys_r',
